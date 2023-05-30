@@ -1,0 +1,1014 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/basicTitle"
+                android:layout_width="108dp"
+                android:layout_height="34dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginBottom="25dp"
+                android:gravity="center"
+                android:text="BASIC"
+                android:textColor="#3242AA"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#99FFFFFF"
+                    android:stretchColumns="1">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/my_shape_file">
+
+                        <TextView
+                            android:id="@+id/pipeDiameterTV"
+                            android:layout_width="108dp"
+                            android:layout_height="34dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+
+
+                            android:layout_toStartOf="@+id/pipeDiameterET"
+                            android:text="Pipe Diameter "
+                            android:textColor="#655252"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                        <EditText
+                            android:id="@+id/pipeDiameterET"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="22dp"
+                            android:layout_toLeftOf="@id/pipeDiameterBtn"
+                            android:background="@android:color/transparent"
+                            android:digits="0123456789ABCDEFabcdef"
+                            android:gravity="center_vertical"
+                            android:hint="          0-1000"
+                            android:inputType="numberSigned"
+                            android:textColor="#3450A8"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/pipeDiameterBtn"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="20dp"
+                            android:gravity="center"
+                            android:text="WRITE"
+                            android:textSize="15sp" />
+                    </TableRow>
+
+                </TableLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#99FFFFFF"
+                    android:stretchColumns="1">
+
+                    <TableRow
+                        android:layout_width="400dp"
+                        android:layout_height="54dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/my_shape_file">
+
+                        <TextView
+                            android:id="@+id/lowFlowTV"
+                            android:layout_width="108dp"
+                            android:layout_height="34dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+
+
+                            android:layout_toStartOf="@+id/lowFlowET"
+                            android:text="Flow Cutoff"
+                            android:textColor="#655252"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                        <EditText
+                            android:id="@+id/lowFlowET"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="22dp"
+                            android:layout_toLeftOf="@id/lowFlowBtn"
+                            android:background="@android:color/transparent"
+                            android:digits="0123456789ABCDEFabcdef"
+                            android:gravity="center_vertical"
+                            android:hint="          0-1000"
+                            android:inputType="numberSigned"
+                            android:textColor="#3450A8"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/lowFlowBtn"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="20dp"
+                            android:gravity="center"
+                            android:text="WRITE"
+                            android:textSize="15sp" />
+
+
+                    </TableRow>
+
+                </TableLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#99FFFFFF"
+                    android:stretchColumns="1">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/my_shape_file">
+
+                        <TextView
+                            android:id="@+id/upperTV"
+                            android:layout_width="108dp"
+                            android:layout_height="34dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+
+
+                            android:layout_toStartOf="@+id/upperRangeET"
+                            android:text="Upper Range"
+                            android:textColor="#655252"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                        <EditText
+                            android:id="@+id/upperRangeET"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="22dp"
+                            android:layout_toLeftOf="@id/upperRangeBtn"
+                            android:background="@android:color/transparent"
+                            android:digits="0123456789ABCDEFabcdef"
+                            android:gravity="center_vertical"
+                            android:hint="          0-1000"
+                            android:inputType="numberSigned"
+                            android:textColor="#3450A8"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/upperRangeBtn"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="20dp"
+                            android:gravity="center"
+                            android:text="WRITE"
+                            android:textSize="15sp" />
+
+
+                    </TableRow>
+
+                </TableLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#99FFFFFF"
+                    android:stretchColumns="1">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/my_shape_file">
+
+                        <TextView
+                            android:id="@+id/lowerRangeTV"
+                            android:layout_width="108dp"
+                            android:layout_height="34dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+
+
+                            android:layout_toStartOf="@+id/lowerRangeET"
+                            android:text="Lower Range"
+                            android:textColor="#655252"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/lowerRangeET"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="22dp"
+                            android:layout_toLeftOf="@id/lowerRangeBtn"
+                            android:background="@android:color/transparent"
+                            android:digits="0123456789ABCDEFabcdef"
+                            android:gravity="center_vertical"
+                            android:hint="          0-1000"
+                            android:inputType="numberSigned"
+                            android:textColor="#3450A8"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/lowerRangeBtn"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="20dp"
+                            android:gravity="center"
+                            android:text="WRITE"
+                            android:textSize="15sp" />
+
+
+                    </TableRow>
+
+                </TableLayout>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/outputTitle"
+                android:layout_width="108dp"
+                android:layout_height="34dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginBottom="25dp"
+                android:gravity="center"
+                android:text="OUTPUT"
+                android:textColor="#3242AA"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#99FFFFFF"
+                    android:stretchColumns="1">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/my_shape_file">
+
+                        <TextView
+                            android:id="@+id/analogTV"
+                            android:layout_width="108dp"
+                            android:layout_height="34dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+
+                            android:layout_toStartOf="@+id/analogSpinner"
+                            android:text="Analog "
+                            android:textColor="#655252"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/analogSpinner"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginRight="22dp"
+                            android:layout_marginBottom="13dp"
+                            android:layout_toLeftOf="@id/analogBtn"
+                            android:gravity="center_vertical" />
+
+                        <Button
+                            android:id="@+id/analogBtn"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="20dp"
+                            android:gravity="center"
+                            android:text="WRITE"
+                            android:textSize="15sp" />
+
+
+                    </TableRow>
+
+                </TableLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#99FFFFFF"
+                    android:stretchColumns="1">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/my_shape_file">
+
+                        <TextView
+                            android:id="@+id/pulseTV"
+                            android:layout_width="108dp"
+                            android:layout_height="34dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toStartOf="@+id/pulseSpinner"
+                            android:text="Pulse"
+                            android:textColor="#655252"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                        <Spinner
+                            android:id="@+id/pulseSpinner"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginRight="22dp"
+                            android:layout_marginBottom="13dp"
+                            android:layout_toLeftOf="@id/pulseBtn"
+                            android:gravity="center_vertical" />
+
+                        <Button
+                            android:id="@+id/pulseBtn"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="20dp"
+                            android:gravity="center"
+                            android:text="WRITE"
+                            android:textSize="15sp" />
+
+
+                    </TableRow>
+
+                </TableLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#99FFFFFF"
+                    android:stretchColumns="1">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/my_shape_file">
+
+                        <TextView
+                            android:id="@+id/pulseWidthTV"
+                            android:layout_width="108dp"
+                            android:layout_height="34dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toStartOf="@+id/pulseWidthET"
+                            android:text="Pulse Width "
+                            android:textColor="#655252"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                        <EditText
+                            android:id="@+id/pulseWidthET"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="22dp"
+                            android:layout_toLeftOf="@id/pulseWidthBtn"
+                            android:background="@android:color/transparent"
+                            android:digits="0123456789ABCDEFabcdef"
+                            android:gravity="center_vertical"
+                            android:hint="          0-1000"
+                            android:inputType="numberSigned"
+                            android:textColor="#3450A8"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/pulseWidthBtn"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="20dp"
+                            android:gravity="center"
+                            android:text="WRITE"
+                            android:textSize="15sp" />
+
+
+                    </TableRow>
+
+                </TableLayout>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/modbusTitle"
+                android:layout_width="108dp"
+                android:layout_height="34dp"
+
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginBottom="25dp"
+                android:gravity="center"
+                android:text="MODBUS"
+                android:textColor="#3242AA"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#99FFFFFF"
+                    android:stretchColumns="1">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/my_shape_file">
+
+                        <TextView
+                            android:id="@+id/idTV"
+                            android:layout_width="108dp"
+                            android:layout_height="34dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toStartOf="@+id/idET"
+                            android:text="ID"
+                            android:textColor="#655252"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                        <EditText
+                            android:id="@+id/idET"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="22dp"
+                            android:layout_toLeftOf="@id/idBtn"
+                            android:background="@android:color/transparent"
+                            android:digits="0123456789ABCDEFabcdef"
+                            android:gravity="center_vertical"
+                            android:hint="          0-1000"
+                            android:inputType="numberSigned"
+                            android:textColor="#3450A8"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/idBtn"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="20dp"
+                            android:gravity="center"
+                            android:text="WRITE"
+                            android:textSize="15sp" />
+
+
+                    </TableRow>
+
+                </TableLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#99FFFFFF"
+                    android:stretchColumns="1">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/my_shape_file">
+
+                        <TextView
+                            android:id="@+id/baudRateTV"
+                            android:layout_width="108dp"
+                            android:layout_height="34dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toStartOf="@+id/baudRateSpinner"
+                            android:text="Baudrate"
+                            android:textColor="#655252"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                        <Spinner
+                            android:id="@+id/baudRateSpinner"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginRight="22dp"
+                            android:layout_marginBottom="13dp"
+                            android:layout_toLeftOf="@id/baudRateBtn"
+                            android:gravity="center_vertical" />
+
+                        <Button
+                            android:id="@+id/baudRateBtn"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="20dp"
+                            android:gravity="center"
+                            android:text="WRITE"
+                            android:textSize="15sp" />
+
+
+                    </TableRow>
+
+                </TableLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#99FFFFFF"
+                    android:stretchColumns="1">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/my_shape_file">
+
+                        <TextView
+                            android:id="@+id/bitTV"
+                            android:layout_width="108dp"
+                            android:layout_height="34dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toStartOf="@+id/bitSpinner"
+                            android:text="Bit"
+                            android:textColor="#655252"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                        <Spinner
+                            android:id="@+id/bitSpinner"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginRight="22dp"
+                            android:layout_marginBottom="13dp"
+                            android:layout_toLeftOf="@id/bitBtn"
+                            android:gravity="center_vertical" />
+
+                        <Button
+                            android:id="@+id/bitBtn"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="20dp"
+                            android:gravity="center"
+                            android:text="WRITE"
+                            android:textSize="15sp" />
+
+
+                    </TableRow>
+
+                </TableLayout>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/advancedTitle"
+                android:layout_width="108dp"
+                android:layout_height="34dp"
+
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginBottom="25dp"
+                android:gravity="center"
+                android:text="ADVANCED"
+                android:textColor="#3242AA"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#99FFFFFF"
+                    android:stretchColumns="1">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/my_shape_file">
+
+                        <TextView
+                            android:id="@+id/gasTypeTV"
+                            android:layout_width="108dp"
+                            android:layout_height="34dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toStartOf="@+id/gasTypeSpinner"
+                            android:text="Gas Type "
+                            android:textColor="#655252"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                        <Spinner
+                            android:id="@+id/gasTypeSpinner"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginRight="22dp"
+                            android:layout_marginBottom="13dp"
+                            android:layout_toLeftOf="@id/gasTypeBtn"
+                            android:gravity="center_vertical" />
+
+                        <Button
+                            android:id="@+id/gasTypeBtn"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="20dp"
+                            android:gravity="center"
+                            android:text="WRITE"
+                            android:textSize="15sp" />
+
+
+                    </TableRow>
+
+                </TableLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#99FFFFFF"
+                    android:stretchColumns="1">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/my_shape_file">
+
+                        <TextView
+                            android:id="@+id/outputCalibrationTV"
+                            android:layout_width="108dp"
+                            android:layout_height="34dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toStartOf="@+id/outputCalibrationET"
+                            android:text="Calibration "
+                            android:textColor="#655252"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                        <EditText
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="22dp"
+                            android:layout_toLeftOf="@id/outputCalibrationBtn"
+                            android:background="@android:color/transparent"
+                            android:digits="0123456789ABCDEFabcdef"
+                            android:gravity="center_vertical"
+                            android:hint="          0-1000"
+                            android:inputType="numberSigned"
+                            android:textColor="#3450A8"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/outputCalibrationBtn"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="20dp"
+                            android:gravity="center"
+                            android:text="WRITE"
+                            android:textSize="15sp" />
+
+
+                    </TableRow>
+
+                </TableLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#99FFFFFF"
+                    android:stretchColumns="1">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/my_shape_file">
+
+                        <TextView
+                            android:id="@+id/correctionFactorTV"
+                            android:layout_width="108dp"
+                            android:layout_height="34dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toStartOf="@+id/correctionFactorET"
+                            android:text="Correction F."
+                            android:textColor="#655252"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                        <EditText
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="22dp"
+                            android:layout_toLeftOf="@id/correctionFactorBtn"
+                            android:background="@android:color/transparent"
+                            android:digits="0123456789ABCDEFabcdef"
+                            android:gravity="center_vertical"
+                            android:hint="          0-1000"
+                            android:inputType="numberSigned"
+                            android:textColor="#3450A8"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/correctionFactorBtn"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="20dp"
+                            android:gravity="center"
+                            android:text="WRITE"
+                            android:textSize="15sp" />
+
+
+                    </TableRow>
+
+                </TableLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#99FFFFFF"
+                    android:stretchColumns="1">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/my_shape_file">
+
+                        <TextView
+                            android:id="@+id/refPresTV"
+                            android:layout_width="108dp"
+                            android:layout_height="34dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toStartOf="@+id/refPresET"
+                            android:text="Ref Pressure"
+                            android:textColor="#655252"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                        <EditText
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="22dp"
+                            android:layout_toLeftOf="@id/refPresBtn"
+                            android:background="@android:color/transparent"
+                            android:digits="0123456789ABCDEFabcdef"
+                            android:gravity="center_vertical"
+                            android:hint="          0-1000"
+                            android:inputType="numberSigned"
+                            android:textColor="#3450A8"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/refPresBtn"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="20dp"
+                            android:gravity="center"
+                            android:text="WRITE"
+                            android:textSize="15sp" />
+
+
+                    </TableRow>
+
+                </TableLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#99FFFFFF"
+                    android:stretchColumns="1">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/my_shape_file">
+
+                        <TextView
+                            android:id="@+id/refTempTV"
+                            android:layout_width="108dp"
+                            android:layout_height="34dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toStartOf="@+id/refTempET"
+                            android:text="Ref Temperature"
+                            android:textColor="#655252"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/refTempET"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="22dp"
+                            android:layout_toLeftOf="@id/refTempBtn"
+                            android:digits="0123456789ABCDEFabcdef"
+                            android:gravity="center_vertical"
+                            android:hint="0-1000"
+                            android:inputType="numberSigned"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/refTempBtn"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="20dp"
+                            android:gravity="center"
+                            android:text="WRITE"
+                            android:textSize="15sp" />
+
+
+                    </TableRow>
+
+                </TableLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

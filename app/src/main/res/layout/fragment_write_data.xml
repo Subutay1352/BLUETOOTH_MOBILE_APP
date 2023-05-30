@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FCFDFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="true"
+                android:textColor="#201313"
+                app:cardBackgroundColor="#4BFFFFFF"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="3dp"
+                app:cardMaxElevation="15dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="16dp">
+
+                <LinearLayout
+                    android:id="@+id/layoutTable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical"
+                    android:textColor="#201313">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/text11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="23dp"
+                            android:text="@string/settings"
+                            android:textAlignment="center"
+                            android:textColor="#005795"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/arrow_button1"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                        </TextView>
+
+                        <ImageButton
+                            android:id="@+id/arrow_button1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/ic_baseline_keyboard_arrow_up_24"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.802"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+                    <TableRow
+                        android:id="@+id/tableRow2"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/asdtrans"
+                        android:visibility="visible">
+
+
+                        <TextView
+                            android:id="@+id/fastLevelTV"
+                            android:layout_width="108dp"
+                            android:layout_height="34dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="Fast Level Change"
+                            android:textColor="#655252"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <Switch
+                            android:id="@+id/simpleSwitch1"
+                            android:layout_marginLeft="85dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_toStartOf="@+id/fastLevelTV"
+                            android:layout_width="wrap_content"
+                            android:checked="true"
+                            android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:id="@+id/tableRow3"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/asdtrans"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/agitatedTV"
+                            android:layout_width="108dp"
+                            android:layout_height="34dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="Agitated Surface"
+                            android:textColor="#655252"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <Switch
+                            android:id="@+id/simpleSwitch2"
+                            android:layout_marginLeft="85dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_toStartOf="@+id/fastLevelTV"
+                            android:layout_width="wrap_content"
+                            android:checked="true"
+                            android:layout_height="wrap_content"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow4"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/asdtrans"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/rangeTV"
+                            android:layout_width="108dp"
+                            android:layout_height="34dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="Min. Range"
+                            android:textColor="#655252"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                        <EditText
+                            android:id="@+id/rangeET"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_toLeftOf="@id/rangeTV"
+                            android:digits="0123456789."
+                            android:singleLine="true"
+                            android:gravity="center_horizontal"
+                            android:hint="0"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textColor="#3450A8"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/rangeVal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_toStartOf="@+id/rangeET"
+                            android:text="m(d)"
+                            android:textColor="#655252"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+
+
+
+
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow28"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/asdtrans"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/maxRangeTV"
+                            android:layout_width="108dp"
+                            android:layout_height="34dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="Max Range"
+                            android:textColor="#655252"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                        <EditText
+                            android:id="@+id/maxRangeET"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="15dp"
+                            android:singleLine="true"
+                            android:layout_toLeftOf="@id/maxRangeTV"
+                            android:digits="0123456789."
+                            android:hint="5"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textColor="#3450A8"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/dampingTimeVal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_toStartOf="@+id/dampingTimeET"
+                            android:text="m(d)"
+                            android:textColor="#655252"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/settingsConfirm1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/asdtrans"
+                        android:visibility="visible">
+
+                        <Button
+                            android:id="@+id/settingsConfirm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/asd"
+                            android:gravity="center"
+                            android:text="SET"
+                            android:textColor="#FFFFFF"
+                            android:textSize="15sp" />
+
+                    </TableRow>
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="true"
+                android:textColor="#201313"
+                app:cardBackgroundColor="#4BFFFFFF"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="3dp"
+                app:cardMaxElevation="15dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="16dp">
+
+                <LinearLayout
+                    android:id="@+id/layoutTable2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical"
+                    android:textColor="#201313">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/text1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="23dp"
+                            android:text="DIAGNOSTICS"
+                            android:textAlignment="center"
+                            android:textColor="#005795"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/arrow_button2"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                        </TextView>
+
+                        <ImageButton
+                            android:id="@+id/arrow_button2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/ic_baseline_keyboard_arrow_up_24"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.802"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TableRow
+                        android:id="@+id/tableRow5"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/asdtrans"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/minTV"
+                            android:layout_width="108dp"
+                            android:layout_height="34dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_toStartOf="@+id/analogSpinner"
+                            android:text="Min. Space"
+                            android:textColor="#655252"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/minVal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="85dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_toStartOf="@+id/minTV"
+                            android:text="5.00 m(d)"
+                            android:textColor="#655252"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow6"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/asdtrans"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/maxTV"
+                            android:layout_width="108dp"
+                            android:layout_height="34dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_toStartOf="@+id/pulseSpinner"
+                            android:text="Max. Space"
+                            android:textColor="#655252"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/maxVal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="85dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_toStartOf="@+id/maxTV"
+                            android:text="0.00 m(d)"
+                            android:textColor="#655252"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow7"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/asdtrans"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/versionTV"
+                            android:layout_width="108dp"
+                            android:layout_height="34dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_toStartOf="@+id/pulseWidthET"
+                            android:text="Version"
+                            android:textColor="#655252"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/versionVal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="85dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_toStartOf="@+id/versionTV"
+                            android:text="v1.0"
+                            android:textColor="#655252"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/asdtrans"
+                        android:visibility="visible">
+
+
+
+                    </TableRow>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="true"
+                android:textColor="#201313"
+                app:cardBackgroundColor="#4BFFFFFF"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="3dp"
+                app:cardMaxElevation="15dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="16dp">
+
+                <LinearLayout
+                    android:id="@+id/layoutTable4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical"
+                    android:textColor="#201313">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/serviceET"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="23dp"
+                            android:text="SERVICE"
+                            android:textAlignment="center"
+                            android:textColor="#005795"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/arrow_button4"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                        </TextView>
+
+                        <ImageButton
+                            android:id="@+id/arrow_button4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/ic_baseline_keyboard_arrow_up_24"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.802"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TableRow
+                        android:id="@+id/tableRow11"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/asdtrans"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/resetTV"
+                            android:layout_width="108dp"
+                            android:layout_height="34dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="Reset"
+                            android:textColor="#655252"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                        <Spinner
+                            android:id="@+id/resetSpinner"
+                            android:layout_width="76dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="85dp"
+                            android:layout_marginRight="22dp"
+                            android:layout_marginBottom="13dp"
+                            android:layout_toLeftOf="@id/resetTV"
+                            android:gravity="center_vertical"
+                            android:textColor="#005795" />
+
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow12"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/asdtrans"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/lowPercentTV"
+                            android:layout_width="108dp"
+                            android:layout_height="34dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="Low Percent Thr."
+                            android:textColor="#655252"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/lowPercentET"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginLeft="85dp"
+                            android:hint="0"
+
+                            android:layout_toLeftOf="@id/lowPercentTV"
+                            android:background="@android:color/transparent"
+                            android:digits="0123456789ABCDEFabcdef."
+                            android:gravity="center_horizontal"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textColor="#3450A8"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/lowPercentVal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="85dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_toStartOf="@+id/lowPercentET"
+                            android:text="m(d)"
+                            android:textColor="#655252"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow13"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/asdtrans"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/highPercentTV"
+                            android:layout_width="108dp"
+                            android:layout_height="34dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="High Percent Thr."
+                            android:textColor="#655252"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                        <EditText
+                            android:id="@+id/highPercentET"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginLeft="85dp"
+                            android:gravity="center_horizontal"
+                            android:hint="0dp"
+                            android:layout_toLeftOf="@id/highPercentTV"
+                            android:background="@android:color/transparent"
+                            android:digits="0123456789ABCDEFabcdef."
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textColor="#3450A8"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/highPercentVal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="85dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_toStartOf="@+id/highPercentET"
+                            android:text="m(d)"
+                            android:textColor="#655252"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                    </TableRow>
+
+
+
+                    <TableRow
+                        android:id="@+id/tableRow31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/asdtrans"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/advancedConfirm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/asd"
+                            android:gravity="center"
+                            android:text="SET"
+                            android:textColor="#FFFFFF"
+                            android:textSize="15sp" />
+
+                    </TableRow>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

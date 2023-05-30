@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_flow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".FlowFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/firstLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:paddingTop="30dp">
+
+                    <TextView
+                        android:id="@+id/medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="1"
+                        android:text="Medium"
+                        android:textColor="#938787"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/distance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="55dp"
+                        android:layout_weight="1"
+                        android:text="Current Distance"
+                        android:textColor="#938787"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/secondLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:paddingTop="20dp">
+
+                    <TextView
+                        android:id="@+id/mediumVal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="1"
+                        android:text="Liquids"
+                        android:textColor="#2E44D3"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/distanceVal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="55dp"
+                        android:singleLine="true"
+                        android:layout_weight="1"
+                        android:text="---"
+                        android:textColor="#2E44D3"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/thirdLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:paddingTop="20dp">
+
+                    <TextView
+                        android:id="@+id/signalOutput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="1"
+                        android:text="Analog Output"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/levelPercentage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="55dp"
+                        android:layout_weight="1"
+                        android:text="Level(%)"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fourthLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:paddingTop="20dp">
+
+                    <TextView
+                        android:id="@+id/signalVal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:singleLine="true"
+                        android:layout_weight="1"
+                        android:text="---"
+                        android:textColor="#2E44D3"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/levelVal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="55dp"
+                        android:singleLine="true"
+                        android:layout_weight="1"
+                        android:text="---"
+                        android:textColor="#2E44D3"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fifthLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical"
+                    android:paddingTop="20dp">
+
+                    <TextView
+                        android:id="@+id/signalStrength"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="140dp"
+                        android:layout_weight="1"
+                        android:text="Signal Strength"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/signalStrengthVal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="170dp"
+                        android:singleLine="true"
+                        android:layout_weight="1"
+                        android:text="---"
+                        android:textColor="#2E44D3"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/sixthLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="45dp"
+                        android:layout_marginEnd="120dp"
+                        android:adjustViewBounds="true"
+                        android:scaleX="1.3"
+                        android:scaleY="1.3"
+                        android:src="@drawable/zero" />
+
+                    <TextView
+                        android:id="@+id/minVal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignWithParentIfMissing="true"
+                        android:layout_marginLeft="-100dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toEndOf="@id/imageView"
+                        android:background="@drawable/rounded_corner"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="Min."
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+
+                    <TextView
+                        android:id="@+id/signalStrengthVal2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignWithParentIfMissing="true"
+                        android:layout_marginLeft="-100dp"
+                        android:layout_marginTop="55dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toEndOf="@id/imageView"
+                        android:background="@drawable/rounded_corner"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="0,00m"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/signalStrengthVal3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignWithParentIfMissing="true"
+                        android:layout_marginLeft="-100dp"
+                        android:layout_marginTop="85dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toEndOf="@id/imageView"
+                        android:background="@drawable/rounded_corner2"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="100,00%"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/maxVal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignWithParentIfMissing="true"
+                        android:layout_below="@+id/signalStrengthVal3"
+                        android:layout_marginLeft="-100dp"
+                        android:layout_marginTop="199dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toEndOf="@id/imageView"
+                        android:background="@drawable/rounded_corner"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="Max."
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/signalStrengthVal4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignWithParentIfMissing="true"
+                        android:layout_below="@+id/signalStrengthVal3"
+                        android:layout_marginLeft="-100dp"
+                        android:layout_marginTop="229dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toEndOf="@id/imageView"
+                        android:background="@drawable/rounded_corner"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="5,00m"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/signalStrengthVal5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignWithParentIfMissing="true"
+                        android:layout_marginLeft="-100dp"
+                        android:layout_marginTop="375dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toEndOf="@id/imageView"
+                        android:background="@drawable/rounded_corner2"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="0,00%"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/currentVal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignWithParentIfMissing="true"
+                        android:layout_marginLeft="-100dp"
+                        android:layout_marginTop="170dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toEndOf="@id/imageView"
+                        android:background="@drawable/rounded_corner3"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="Current"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/signalStrengthVal6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignWithParentIfMissing="true"
+                        android:layout_marginLeft="-100dp"
+                        android:layout_marginTop="200dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toEndOf="@id/imageView"
+                        android:background="@drawable/rounded_corner3"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="30,00m"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/signalStrengthVal7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignWithParentIfMissing="true"
+                        android:layout_marginLeft="-100dp"
+                        android:layout_marginTop="230dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toEndOf="@id/imageView"
+                        android:background="@drawable/rounded_corner2"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="0,00%"
+                        android:textSize="20sp" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
